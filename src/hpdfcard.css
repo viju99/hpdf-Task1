@@ -1,0 +1,82 @@
+.hpdfcard {
+    width: 500px;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 10px;
+    
+}
+
+.cardImage {
+
+    max-width:100%;
+	height:auto;
+}
+
+.cardHeader {
+    text-align: left;
+}
+
+.summaryHeader{
+    width: 200px;
+    margin-left:10px;
+    padding-right:10px;
+}
+
+.personalSummary{
+    width: 400px;
+    margin-left:10px;
+    padding:10px;
+    float: left;
+}
+
+.trendsForYou{
+    height: 50px;
+    width: 370px;
+    margin-left:15px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    max-width: 50%
+
+}
+
+.leftBar{
+    width: 400px;
+    margin-left:10px;
+    padding-right:10px;
+    float: left; 
+}
+
+.trendButtons {
+    background-color: #FFF;
+    height: 150px;
+    padding: 20px;
+    color: red;
+  }
+
+.rightNavBar{
+    width: 300px;
+    margin-right:10px;
+    padding-left:10px;
+    float: right;
+}
+.rightBar{
+    width: px;
+    margin-right:10px;
+    padding-left:10px;
+    float: right; 
+}
+
+.trends{
+    margin-top: 10px;
+    float: bottom ;
+}
+
+.tweetsForYouButton {
+    text-align: left;
+}
+
+.listOfInterest{
+    height: 200px;
+    margin-top: 10px;
+}
