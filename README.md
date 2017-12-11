@@ -27,9 +27,11 @@ Installing and running the application:
 
 Author : Vijay Sankar A
 e-mail : viju99@gmail.com
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
 Create React App Documentation
-
-
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
