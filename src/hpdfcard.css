@@ -2,7 +2,8 @@
     width: 500px;
     margin-left:auto;
     margin-right:auto;
-    padding: 10px;
+    padding: 5px;
+    position: relative;
     
 }
 
@@ -16,6 +17,13 @@
     text-align: left;
 }
 
+.cardHeaderTop {
+    max-width:100%;
+    text-align: left;
+    display: flex;
+    float: left;
+}
+
 .summaryHeader{
     width: 200px;
     margin-left:10px;
@@ -23,20 +31,21 @@
 }
 
 .personalSummary{
-    width: 400px;
-    margin-left:10px;
-    padding:10px;
+    width: 325px;
+    margin-left:5px;
+    padding:5px;
+    position: absolute;
     float: left;
+    
 }
 
 .trendsForYou{
     height: 50px;
-    width: 370px;
-    margin-left:15px;
+    width: 300px;
+    margin-left: 10px;
     text-align: left;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    max-width: 50%
+    position: relative;
+    top: 200px;
 
 }
 
@@ -49,15 +58,15 @@
 
 .trendButtons {
     background-color: #FFF;
-    height: 150px;
+    height: 100px;
     padding: 20px;
     color: red;
   }
 
 .rightNavBar{
-    width: 300px;
-    margin-right:10px;
-    padding-left:10px;
+    width: 325px;
+    margin-right:5px;
+    padding-left:5px;
     float: right;
 }
 .rightBar{
@@ -72,11 +81,42 @@
     float: bottom ;
 }
 
-.tweetsForYouButton {
+.tweetsForYouBtn {
     text-align: left;
+    color: red;
 }
 
 .listOfInterest{
-    height: 200px;
-    margin-top: 10px;
+    height: 10px;
+    margin-top: 5px;
+}
+
+.tweetButton{
+    background-color: red;
+    border-color: white;
+    height: 40px;
+    width: 100px;
+    font-size: large;
+    border: 2px solid white;
+    border-radius: 25px;
+
+}
+
+.largeText{
+    font-size: xx-large;
+}
+
+.followButton{
+    background-color: white;
+    border-color: red;
+    color: red;
+    height: 30px;
+    width: 70px;
+    font-size: small;
+    border: 2px solid red;
+    border-radius: 20px;
+}
+
+.whatsHappeningField{
+    height:70px;
 }

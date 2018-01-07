@@ -37,6 +37,9 @@ class MyToolbar extends React.Component {
           <div>
             <HpdfTextField showText = "Search Twitter" />
           </div>
+          <div>
+            <button className="tweetButton" onClick={console.log("clicked here")}> Tweet1 </button>
+          </div>
         </ToolbarGroup>
       </Toolbar>  
     );

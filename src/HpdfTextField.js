@@ -13,6 +13,7 @@ const HpdfTextField = (props) => (
       style={style}
       id="text-Search-Twitter"
       hintText={props.showText}
+      onSubmit={console.log("submitted")}
     />
   </div>
 );

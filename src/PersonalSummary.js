@@ -1,8 +1,8 @@
 import React from 'react';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import './hpdfcard.css';
-import imageDT from './trump.jpg'
-import imageAB from './BigB.jpg'
+import imageDT from './trump.jpg';
+import imageAB from './BigB.jpg';
 import Avatar from 'material-ui/Avatar';
 import FontIcon from 'material-ui/FontIcon';
 import List from 'material-ui/List/List';

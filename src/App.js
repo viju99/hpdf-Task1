@@ -16,15 +16,20 @@ class App extends Component {
       <div className="App">
         <MuiThemeProvider>
           <MyToolbar />
-            <div className = "leftbar">
-              <PersonalSummary />
+          <p>
+            <div className="contentContainer">
+              <div>
+                <PersonalSummary />
+                <TrendsForYou />
+              </div>
+                <div>  
+                  <ListOfCards />
+                </div>
+              <div>
+                <RightNavBar />
+              </div>
             </div>
-            <div>
-              <TrendsForYou />
-            </div>
-            <div>
-              <ListOfCards />
-            </div>
+          </p>
         </MuiThemeProvider>
       </div>
     );

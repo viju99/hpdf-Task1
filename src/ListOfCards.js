@@ -1,6 +1,5 @@
 import React from 'react';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
-import FlatButton from 'material-ui/FlatButton';
 import './hpdfcard.css';
 import imageDT from './trump.jpg'
 import imageAB from './BigB.jpg'
@@ -9,6 +8,7 @@ import FileFolder from 'material-ui/svg-icons/file/folder';
 import FontIcon from 'material-ui/FontIcon';
 import List from 'material-ui/List/List';
 import ListItem from 'material-ui/List/ListItem';
+import TextField from 'material-ui/TextField';
 
 // import FontIcon from 'material-ui/FontIcon';
 import {BottomNavigation, BottomNavigationItem} from 'material-ui/BottomNavigation';
@@ -19,6 +19,7 @@ import Cached from 'material-ui/svg-icons/action/cached';
 import FavoriteBorder from 'material-ui/svg-icons/action/favorite-border';
 import MailOutline from 'material-ui/svg-icons/communication/mail-outline';
 
+/*
 import {
   blue300,
   indigo900,
@@ -26,7 +27,8 @@ import {
   deepOrange300,
   pink400,
   purple500,
-} from 'material-ui/styles/colors';
+  red100,
+} from 'material-ui/styles/colors';*/
 
 const recentsIcon = <FontIcon className="material-icons">recent</FontIcon>;
 const favoritesIcon = <FontIcon className="material-icons">favorite</FontIcon>;
@@ -39,7 +41,10 @@ const mailIcon = <MailOutline />;
 
 const style = {margin: 1};
 
-//const ListOfCards = () => (
+const styleTextField ={
+  width: 250,
+  right: 100
+};
 
 class ListOfCards extends React.Component {
 
@@ -49,9 +54,23 @@ class ListOfCards extends React.Component {
 
   select = (index) => this.setState({selectedIndex: index});
 
+  
+
   render() {
   return (
     <List className="hpdfcard">
+      <ListItem>
+        <Card className="whatsHappeningField">
+          <CardHeader className="cardHeaderTop"
+          avatar={imageDT}
+          />
+          <TextField
+            style={styleTextField}
+            id="text-Search-WhatsHappening"
+            hintText="What's Happening?"
+          />
+        </Card>
+      </ListItem>
       <ListItem>
         <Card >
           <CardHeader className="cardHeader"

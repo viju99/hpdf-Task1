@@ -4,6 +4,8 @@ import FlatButton from 'material-ui/FlatButton';
 import './hpdfcard.css';
 import imageDT from './trump.jpg'
 import imageAB from './BigB.jpg'
+import imageST from './shashi-tharoor.jpg';
+import imageRN from './Rafael-Nadal.jpg'
 import Avatar from 'material-ui/Avatar';
 import FileFolder from 'material-ui/svg-icons/file/folder';
 import FontIcon from 'material-ui/FontIcon';
@@ -49,47 +51,46 @@ class RightNavBar extends React.Component {
 
   select = (index) => this.setState({selectedIndex: index});
 
+  getLinkHtml(link, target){
+    const linkText = <a href={target}>{link}</a>;
+    return linkText;
+  }
+
+
   render() {
   return (
     <List className="rightNavBar">
       <ListItem>
         <Card >
+          <CardText className='largeText'>
+            <strong>Who to follow</strong>
+          </CardText>
           <CardHeader className="cardHeader"
-          title="Donald Trump"
-          subtitle="@readDonaldTrump"
-          avatar={imageDT}
+          title="Shashi Tharoor"
+          subtitle= {this.getLinkHtml("ShashiTharoor","http://www.twitter.com")}
+          avatar={imageST}
           />
-          <CardText>
-          Things are going really well for our economy, a subject the Fake News spends as little time as possible discussing! Stock Market hit another RECORD HIGH, unemployment is now at a 17 year low and companies are coming back into the USA. Really good news, and much more to come!
-          </CardText>
-          <CardMedia
-            overlay={<CardTitle  />}
-          >
-            <img className="cardImage" src={imageDT} alt="" />
-          </CardMedia>
-          <CardText>
-          I will say whatever comes to my mind without thinking :)
-          </CardText>
+          <button className="followButton"> Follow </button>
+        </Card>
+        <Card >
+          <CardHeader className="cardHeader"
+          title={"Rafael Nadal" + this.getLinkHtml("RafaelNadal","http://www.twitter.com/RafaelNadal")}
+          subtitle={this.getLinkHtml("RafaelNadal","http://www.twitter.com/RafaelNadal")}
+          avatar={imageRN}
+          />
+          <button className="followButton"> Follow </button>
         </Card>
 
       </ListItem>
       <ListItem>
         <Card >
           <CardHeader className="cardHeader"
-          title="Amitabh Bachan"
-          subtitle="@SrBachchan"
-          avatar={imageAB}
+          title="Rafael Nadal"
+          subtitle="@RafaelNadal"
+          avatar={imageRN}
           />
-          <CardMedia
-            overlay={<CardTitle  />}
-          >
-            <img className="cardImage" src={imageAB} alt="" />
-          </CardMedia>
-          <CardText>
-          T 2737 - 80  MILLION followers !!! on social  media .. collective !!
-          80  MILLION  !! 80  MILLION !! 🙏🙏🙏🙏🙏🙏🙏🙏
-          </CardText>
-          </Card>
+    
+        </Card>
       </ListItem>
     </List>
   );
