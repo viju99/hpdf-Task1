@@ -2,6 +2,7 @@ import React from 'react';
 import {Toolbar, ToolbarGroup, ToolbarSeparator, ToolbarTitle} from 'material-ui/Toolbar';
 import MyHeaderButtons from './MyHeaderButtons';
 import { white } from 'material-ui/styles/colors';
+import TextField from 'material-ui/TextField';
 import HpdfTextField from './HpdfTextField';
 import logo from './Twitter-logo.png'
 import './logo.css';
@@ -11,16 +12,33 @@ const style = {
   backgroundColor: white
 };
 
+const styleText ={
+  position: 'relative',
+  left:-20
+
+};
+
 class MyToolbar extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {
+    /*this.state = {
       value: 3,
-    };
+      searchString1: "Vijay"
+    };*/
   }
 
   handleChange = (event, index, value) => this.setState({value});
+
+  hanldePick(ev){
+    console.log(`Pressed keyCode ${ev.key}`);
+    if (ev.key === 'Enter') {
+      alert("entered");
+      alert (this.value);
+      ev.preventDefault();
+    }
+    console.log(this);
+  }
 
   render() {
     return (
@@ -35,10 +53,16 @@ class MyToolbar extends React.Component {
         </ToolbarGroup>
         <ToolbarGroup>
           <div>
-            <HpdfTextField showText = "Search Twitter" />
+            <TextField
+              name="searchString"
+              style={styleText}
+              id="text-Search-Twitter"
+              hintText="Search Twitter"
+              onKeyPress={this.hanldePick.bind(this)}
+            />
           </div>
           <div>
-            <button className="tweetButton" onClick={console.log("clicked here")}> Tweet1 </button>
+            <button className="tweetButton" onClick={this.hanldePick}> Tweet </button>
           </div>
         </ToolbarGroup>
       </Toolbar>  

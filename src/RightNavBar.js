@@ -63,10 +63,10 @@ class RightNavBar extends React.Component {
       <ListItem>
         <Card >
           <CardText className='largeText'>
-            <strong>Who to follow</strong>
+            <h2>Who to follow</h2>
           </CardText>
           <CardHeader className="cardHeader"
-          title="Shashi Tharoor"
+          title="@Shashi Tharoor"
           subtitle= {this.getLinkHtml("ShashiTharoor","http://www.twitter.com")}
           avatar={imageST}
           />
@@ -74,23 +74,13 @@ class RightNavBar extends React.Component {
         </Card>
         <Card >
           <CardHeader className="cardHeader"
-          title={"Rafael Nadal" + this.getLinkHtml("RafaelNadal","http://www.twitter.com/RafaelNadal")}
+          title="@Rafael Nadal"
           subtitle={this.getLinkHtml("RafaelNadal","http://www.twitter.com/RafaelNadal")}
           avatar={imageRN}
           />
           <button className="followButton"> Follow </button>
         </Card>
 
-      </ListItem>
-      <ListItem>
-        <Card >
-          <CardHeader className="cardHeader"
-          title="Rafael Nadal"
-          subtitle="@RafaelNadal"
-          avatar={imageRN}
-          />
-    
-        </Card>
       </ListItem>
     </List>
   );

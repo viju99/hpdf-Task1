@@ -12,6 +12,9 @@ class TrendsForYou extends React.Component {
   render() {
   return (
         <List className = "trendsForYou" >
+            <ListItem>
+                <h2>Trends for you</h2>
+            </ListItem>
             <ListItem >
                 <FlatButton  
             name="tweetsForYouButton">
